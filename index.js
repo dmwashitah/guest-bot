@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const PORT = process.env.PORT || 3000;
 const { getRoomReply } = require("./utils/messageHandler");
 
 const app = express();
@@ -8,6 +9,14 @@ app.use(bodyParser.json());
 
 const VERIFY_TOKEN = "mathanda-verify";
 const ACCESS_TOKEN = "EAAKCVLzAFKkBPJpmA8bpFAB5ctWT5KLxrYbMVdDOvuhAJNi1MklZCyreNo87xYhM45XKzkqne9sZAGpsUggZBv4vzrIsuQGDJ97D7gOe3kcHHzQ653Px3Qj4OAlmxTSWHomCGOSvpzhBdMjwcT2SqUQFRnjB7rYfSqbsGSE0AZBI2DZBah9p2eZCtCCi8TbgWR8djNMYfRie957q3MQNNphkPOkFZAZCVjaNJptDNK2tigZDZD";
+
+// BASIC ROUTE HANDLER
+app.get('/', (req, res) => {
+res.send('Hello !'); });
+
+app.listen(PORT, () => {
+console.log('Server running on port ${PORT}');
+});
 
 // Webhook verification
 app.get("/webhook", (req, res) => {
