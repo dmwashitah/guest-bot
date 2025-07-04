@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const VERIFY_TOKEN = "mathanda-verify";
-const ACCESS_TOKEN = "PASTE_YOUR_META_TEMP_TOKEN_HERE";
+const ACCESS_TOKEN = "EAAKCVLzAFKkBPJpmA8bpFAB5ctWT5KLxrYbMVdDOvuhAJNi1MklZCyreNo87xYhM45XKzkqne9sZAGpsUggZBv4vzrIsuQGDJ97D7gOe3kcHHzQ653Px3Qj4OAlmxTSWHomCGOSvpzhBdMjwcT2SqUQFRnjB7rYfSqbsGSE0AZBI2DZBah9p2eZCtCCi8TbgWR8djNMYfRie957q3MQNNphkPOkFZAZCVjaNJptDNK2tigZDZD";
 
 // Webhook verification
 app.get("/webhook", (req, res) => {
