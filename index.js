@@ -1,4 +1,4 @@
- HEAD
+
 // Your local changes
 // incoming changes from GitHub
  43adf3d
