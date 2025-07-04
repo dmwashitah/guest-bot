@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+ HEAD
 // Your local changes
-=======
 // incoming changes from GitHub
->>>>>>> 43adf3d
+ 43adf3d
 // index.js
 const express = require("express");
 const bodyParser = require("body-parser");
